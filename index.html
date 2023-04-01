@@ -6,10 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Popup Message</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Iconscout CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Google Font (Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
+    <div class="container">
+        <button type="submit" class="btn" onclick="showConfirmMessage()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="./img/check.png">
+            <h2>Thank You!</h2>
+            <p>Your Details Has Been Successfully Submitted. Thanks!</p>
+            <div class="confirmation-btn">
+                <button type="button" id="cancel-btn" onclick="hideConfirmMessage()">Cancel</button>
+                <button type="button" id="ok-btn">OK</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script src="./js/main.js"></script>
